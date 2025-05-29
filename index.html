@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>متجر بيع الحسابات</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="متجر الحسابات">
+  <meta name="theme-color" content="#1e88e5">
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+
+  <section id="loginSection">
+    <h2>تسجيل الدخول</h2>
+    <form id="loginForm">
+      <label for="username">اسم المستخدم:</label>
+      <input type="text" id="username" required />
+
+      <label for="password">كلمة المرور:</label>
+      <input type="password" id="password" required />
+
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+    <p id="loginMessage" style="margin-top: 10px;"></p>
+  </section>
+
+  <section id="chatSection">
+    <h2>الدردشة</h2>
+    <div id="chatBox"></div>
+    <form id="chatForm">
+      <input type="text" id="chatInput" placeholder="اكتب رسالتك..." required />
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
